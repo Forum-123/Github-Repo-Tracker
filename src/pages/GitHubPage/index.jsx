@@ -1,14 +1,9 @@
-import React, { useState } from "react";
-import { Form, RepoInfo } from "../../components";
+import React from "react";
 
 export const GitHubPage = () => {
-    const [search, setSearch] = useState("");
-
-    const getInput = (input) => {
-        setSearch(input)
-    }
-
     return (
-        <Form getInput={getInput} />
+        <>
+            <h4>Github page</h4>
+        </>
     )
 }
