@@ -4,7 +4,10 @@
   "description": "Github repo tracker to view Github repo data without visiting the site itself",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --env=jsdom --watch --verbose --setupFilesAfterEnv ./src/test/setupTests.js",
+    "coverage": "jest --env=jsdom --setupFilesAfterEnv ./src/test/setupTests.js --coverage --silent --watchAll=false",
+    "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
+    "build": "webpack --config config/webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
