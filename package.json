@@ -1,0 +1,38 @@
+{
+  "name": "github_repo_tracker",
+  "version": "1.0.0",
+  "description": "Github repo tracker to view Github repo data without visiting the site itself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forum-123/Github-Repo-Tracker.git"
+  },
+  "author": "Forum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Forum-123/Github-Repo-Tracker/issues"
+  },
+  "homepage": "https://github.com/Forum-123/Github-Repo-Tracker#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.63.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}
