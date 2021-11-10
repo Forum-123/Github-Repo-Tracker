@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./style.css";
 
-export const Form = ({ getInput }) => {
+export const Search = ({ getInput }) => {
     const [username, setUsername] = useState("");
     const [formAlert, setFormAlert] = useState("Enter a username");
 
