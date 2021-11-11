@@ -1,14 +1,22 @@
 .repos {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 900px) {
     .repos {
-        padding: 0 3rem;
+        width: 60%;
     }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1200px) {
+    .repos {
+        width: 50%;
+    }
+}
+
+/* @media only screen and (min-width: 850px) {
     .repos {
         padding: 0 5rem;
     }
@@ -18,4 +26,4 @@
     .repos {
         padding: 0 10rem;
     }
-}
+} */
