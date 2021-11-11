@@ -1,0 +1,35 @@
+label {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0.5rem;
+}
+
+input[type=text] {
+    background-color: #FFFFFF;
+    border: 1px solid #57606A;
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: #24292F;
+    margin: 0 0.5rem;
+}
+
+form {
+    text-align: center;
+}
+
+#results {
+    padding-top: 2rem;
+}
+
+input[type=submit] {
+    padding: 0.3rem 1rem;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
+    color: #24292F;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}

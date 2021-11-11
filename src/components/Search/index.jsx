@@ -1,40 +1,31 @@
 import React, { useState } from "react";
-
+import { Repos } from "..";
 import "./style.css";
 
-export const Search = ({ getInput }) => {
+export const Search = () => {
     const [username, setUsername] = useState("");
-    const [formAlert, setFormAlert] = useState("Enter a username");
-
-    const reset = () => {
-        setUsername("");
-        setFormAlert("Enter a username");
-    };
+    const [submit, setSubmit] = useState(false);
 
     const handleInput = (e) => {
-        console.log(e.target.value)
-        if (e.target.value) {
-            setUsername(e.target.value);
-            setFormAlert("");
-        } else {
-            setUsername("");
-            setFormAlert("Please enter a username");
-        }
-
+        setUsername(e.target.value);
+        setSubmit(false);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        getInput(username);
-        setUsername("");
-        setFormAlert("");
+        setSubmit(true);
     };
 
     return (
-        <form aria-label="form" onSubmit={handleSubmit, reset}>
-            <label htmlFor="username">Username</label>
-            <input type="text" id="username" value={username} onChange={handleInput} />
-            <input type="submit" disabled={formAlert} value={formAlert ? formAlert : "Search"} />
-        </form>
+        <>
+            <form aria-label="form" onSubmit={handleSubmit}>
+                <label htmlFor="username">Username</label>
+                <input type="text" id="username" value={username} placeholder="Search..." onChange={handleInput} />
+                <input type="submit" value="Get repos" />
+            </form>
+            <div id="results">
+                {submit && <Repos username={username} />}
+            </div>
+        </>
     )
 }
