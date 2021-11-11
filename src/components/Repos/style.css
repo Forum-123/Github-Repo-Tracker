@@ -1,0 +1,21 @@
+.repos {
+    padding: 0 14rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .repos {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .repos {
+        padding: 0 5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .repos {
+        padding: 0 8rem;
+    }
+}
