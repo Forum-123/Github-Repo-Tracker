@@ -1,0 +1,71 @@
+.repoDetails {
+    padding: 1rem;
+    border: 1px solid #D8DEE4;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    overflow: overlay;
+    padding-bottom: 0;
+}
+
+.description {
+    font-weight: normal;
+}
+
+#repoURL {
+    text-decoration: none;
+    cursor: pointer;
+    color: #0969DA;
+    display: inline;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+#repoURL:hover {
+    text-decoration: underline;
+}
+
+#repoURL:visited {
+    text-decoration: none;
+}
+
+.visibility {
+    border: 1px solid #D0D7DE;
+    border-radius: 2em;
+    padding: 0.2rem 0.4rem;
+    color: #D0D7DE;
+}
+
+.repoDetails>p {
+    text-align: left;
+}
+
+.statsBtn {
+    font-weight: normal;
+    padding: 0.3rem 0.5rem;
+}
+
+#left #stats{
+    float: left;
+}
+
+#left {
+    font-weight: normal;
+    width: 100%;
+    margin: 0;
+}
+
+#stats {
+    letter-spacing: 0.2rem;
+}
+
+#stats #right {
+    margin-bottom: 0.1rem;
+    padding-bottom: 0;
+}
+
+#right {
+    float: right;
+    font-weight: normal;
+}
